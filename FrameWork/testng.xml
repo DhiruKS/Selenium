@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestNG_Concept.TestNgBasic">
+      	<methods>
+      		<include name="demo1()"/>
+        </methods>
+      </class>
+      
+       <class name="TestNG_Concept.TestNGPriority">
+       		<methods>
+       			<exclude name="MobileLogin()"/>
+       		</methods>
+       </class>
+       <class name="TestNGInclude.IncludeClass"/>
+       <class name="TestNGInclude.ExcludeClass"/>
+     </classes>
+    
+  </test> <!-- Test -->
+  <test name="priority-p">
+  	<classes> 
+ 		<class name="TestNG_Concept.TestNGPriority_p">
+ 		<methods>
+ 			<include name="cart.*"/>
+ 		</methods>
+  
+  		</class>
+  
+  	</classes>
+  
+  </test>
+
+</suite> <!-- Suite -->

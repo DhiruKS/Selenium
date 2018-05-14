@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="packagelevel">
+<parameter name="URL" value="www.facebool.com"></parameter>
+	<test name="test">
+		<parameter name="URL" value="www.gmail.com"></parameter>
+			
+			<packages>
+				<package name="TestNG_Concept">
+				
+				
+				</package>
+				
+			
+			</packages>
+
+		
+
+		
+
+
+	</test>
+	<test name="TestNGInclude">
+	<packages>
+	<package name="TestNGInclude"></package>
+	
+	</packages>
+	</test>
+
+</suite>
